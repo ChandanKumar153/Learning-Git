@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands Notes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        h3 {
+            color: #27ae60;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background-color: #ecf0f1;
+            color: #333333;
+            padding: 10px;
+            border-radius: 6px;
+            overflow: auto;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+            
+    #github-commands {
+        page-break-before: always;
+    }
+    </style>
+</head>
+<body>
+    <h1>Git & GitHub Commands Notes</h1>
+
+    <h2>Git Commands:</h2>
+
+    <h3>Initialization:</h3>
+    <pre><code>git init</code>: Initialize a new Git repository.</pre>
+
+    <h3>Cloning:</h3>
+    <pre><code>git clone &lt;repository_url&gt;</code>: Clone a repository from a remote URL.</pre>
+
+    <h3>Status:</h3>
+    <pre><code>git status</code>: Show the status of changes as untracked, modified, or staged.</pre>
+
+    <h3>Adding Changes:</h3>
+    <pre><code>git add &lt;file&gt;</code>: Add changes in a file to the staging area.</pre>
+    <pre><code>git add .</code> or <code>git add --all</code>: Add all changes to the staging area.</pre>
+
+    <h3>Committing:</h3>
+    <pre><code>git commit -m "Commit message"</code>: Commit staged changes with a descriptive message.</pre>
+
+    <h3>Branching:</h3>
+    <pre><code>git branch</code>: List all branches in the repository.</pre>
+    <pre><code>git branch &lt;branch_name&gt;</code>: Create a new branch.</pre>
+    <pre><code>git checkout &lt;branch_name&gt;</code>: Switch to a different branch.</pre>
+    <pre><code>git merge &lt;branch_name&gt;</code>: Merge changes from one branch into another.</pre>
+
+    <h3>Remote Repositories:</h3>
+    <pre><code>git remote add origin &lt;repository_url&gt;</code>: Add a remote repository.</pre>
+    <pre><code>git push -u origin &lt;branch_name&gt;</code>: Push changes to a remote repository.</pre>
+    <pre><code>git pull origin &lt;branch_name&gt;</code>: Pull changes from a remote repository.</pre>
+
+    <h3>Log:</h3>
+    <pre><code>git log</code>: Display a log of commits.</pre>
+
+    <h3>Undoing Changes:</h3>
+    <pre><code>git reset &lt;file&gt;</code>: Unstage changes.</pre>
+    <pre><code>git reset --hard &lt;commit_hash&gt;</code>: Reset to a specific commit, discarding changes.</pre>
+    <pre><code>git revert &lt;commit_hash&gt;</code>: Create a new commit that undoes a previous commit.</pre>
+
+
+    
+
+    <br> <br>
+    <h2 id="github-commands">GitHub Commands:</h2>
+
+
+    <h3>Repository Interaction:</h3>
+    <pre><code>git remote -v</code>: View remote repositories.</pre>
+    <pre><code>git remote add origin &lt;repository_url&gt;</code>: Add a remote repository.</pre>
+    <pre><code>git remote remove origin</code>: Remove a remote repository.</pre>
+
+    <h3>Pull Requests:</h3>
+    <pre><code>git pull-request</code>: Open a pull request on GitHub.</pre>
+
+    <h3>Forking:</h3>
+    <pre><code>git fork</code>: Fork a repository on GitHub.</pre>
+
+    <h3>Collaboration:</h3>
+    <pre><code>git clone &lt;forked_repository_url&gt;</code>: Clone a forked repository.</pre>
+    <pre><code>git remote add upstream &lt;original_repository_url&gt;</code>: Add the original repository as an upstream remote.</pre>
+    <pre><code>git fetch upstream</code>: Fetch changes from the original repository.</pre>
+    <pre><code>git merge upstream/main</code>: Merge changes from the original repository into your local branch.</pre>
+
+    <h3>GitHub Pages:</h3>
+    <pre><code>git checkout -b gh-pages</code>: Create a branch for GitHub Pages.</pre>
+    <p>Push HTML, CSS, or other web assets to this branch for hosting.</p>
+
+</body>
+</html>
